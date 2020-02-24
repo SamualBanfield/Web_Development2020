@@ -1,0 +1,27 @@
+/* S.banfield
+Basic Desgin
+24-.2-2020 */
+
+body{
+  background-color: #f9fae8;
+  text-align: center;
+}
+
+.Container1{
+border: ridge;
+color: #557bce;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 30px;
+}
+.Container2{
+  align-items: center;
+}
+
+img{
+height: 200px;
+width: 300px;
+}
+
+#benifits{
+  color: #22ee7e;
+}
