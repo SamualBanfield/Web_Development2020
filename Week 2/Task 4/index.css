@@ -1,0 +1,119 @@
+/* bg 3E4C57
+green 46A16E
+link 396779 */
+
+*{
+  box-sizing: border-box;
+}
+
+/* Centering Generic */
+body, .twitter i, .facebook i, .facebook, .twitter, .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reusing width element */
+.socialcontainer, .button, .inputs{
+  width: 100%;
+}
+
+html, body{
+  margin: 0;
+  font-family: 'Spartan', sans-serif;
+  background-color: #3E4C57;
+  margin-top: 5vh;
+}
+
+.container{
+  background-color: #3E4C57;
+  width: 95vw;
+  height: 90vh;
+  flex-direction: column;
+  color: white;
+  display: flex;
+  align-items: center;
+  align-items: top;
+}
+
+.socialcontainer{
+  display: flex;
+}
+
+.facebook, .twitter{
+  width: 50%;
+  color: white;
+  display: flex;
+  padding: 5px;
+  text-align: center;
+}
+
+.facebook{
+  background-color: #3D5A94;
+}
+
+.twitter{
+  background-color: #4FAEF3; 
+}
+
+.twitter i, .facebook i{
+  padding-right: 5vw;
+  padding-left: 10vw;
+}
+
+.twitter h5, .facebook h5{
+  padding-right: 30%;
+}
+
+.button{
+  background-color: #46A16E;
+}
+
+.button a{
+  color: white;
+}
+
+a{
+  color: rgb(78, 121, 209);
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: 'Spartan', sans-serif;
+}
+
+/* This still makes the content inside the input
+move when you focus it. */
+input{
+  background-color: white;
+  outline: none;
+  border-style: none;
+  min-width: 100%;
+  padding-left: 0.5vw;
+  padding: 1.5vh 0 1.5vh 0.5vw;
+}
+
+#comboinput, #email, #password{
+  padding-bottom: 3vh;
+}
+/* Couldnt get the container 'comboinput to display both firstname and last name
+next to each other with a gap */
+#comboinput{
+  display: inline-flex;
+}
+
+#firstname, #lastname{
+  width: 50%;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus{
+  border-left: 1vw solid #46A16E;
+}
+
+#password, #email{
+  width: 100%;
+}
