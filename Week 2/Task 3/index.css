@@ -1,98 +1,158 @@
-*{
-  box-sizing: border-box;
-}
+/* accsent #433B4F
+color 1 #B77DFD
+color 2 #C8A3F8
+Footer/topic #1D1724 */
 
 body{
   margin: 0;
   background-color: #433B4F;
-  font-family: 'runescape';
+  font-family: 'spartan';
 }
 
 @font-face {
   font-family: 'spartan';
   src: url('Spartan.ttf');
-  font-family: 'runescape';
-  src: url('Runescape.woff') format('woff');
+  font-family:'brush';
+  src: url('Brush.TTF');
 }
 
-.date{
-  display: inline-block;
-  padding-left: 5vw;
+*{
+  box-sizing: border-box;
 }
 
-.likes{
-  color: rgb(65, 64, 64);
-  display: inline-block;
-
-}
-
-.banner{
-  background-color: white;
-}
-
-.banner img{
-  width: 100%;
-  max-height: 20vh;
-  height: auto;
-}
-
-.footer{
-  background-color: #1D2724;
-  flex-direction: column; 
-  color: yellow;  
-}
-
-.heading{
-font-family: "runescape";
-color: yellow;
--webkit-text-stroke: 3px black;
-font-size: 100px;
-text-align: center;
-padding: 15px;
-}
-
-.maincontent{
-  width: 90vw; 
-}
-
-.container{
-  flex-direction: column;
-}
-
-.banner h1{
-  margin: 0;
-  padding: 0 0 5vh 0;
-  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
-  background-position: bottom;
-  background-size: 1vw 1px;
-  background-repeat: repeat-x;
-}
-
-.readmore{
-  display: flex;
-  flex-direction: row;
-}
-
-.readmore > *{
-  margin: 0;
-  background-color: white;
-}
-
-.readmore p{
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding: 5vh 0 5vh 0;
-}
-
-.readmore a{
-  text-decoration: none;
-  color: white;
-  background-color: green;
-}
- 
 /* General centering */
- .footer, .container, .readmore a{
+body, .footer, .content, .button, .date
+{
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
+
+/* General width management, I could probably do this better by
+selecting just the direct childeren of the container, as every element
+is in some form of container that takes up a whole row length */
+img, #stats, .topic, .entry, .content, #readmorecontainer, .footer
+{
+  width: 90vw;
+}
+
+.content{
+  background-color: white;
+  flex-direction: column;
+}
+
+#heading{
+color: white;
+font-family: 'brush';
+text-align: center;
+font-size: 3rem;
+margin: 0 0 2vh 0;
+}
+
+#stats{
+  padding: 2vh 2vh 0 0;
+}
+
+#stats > *{
+  display: inline;
+}
+
+#stats :last-child{
+  color: #C9BDDB;
+}
+
+#stats :first-child{
+  color: #433B4F;
+}
+
+.topic{
+  border-bottom: dashed 1px #C9BDDB;
+  font-size: 1.5rem;
+}
+
+.topic p{
+  margin:  5vh 2vh 2vh 2vh;
+}
+
+#readmorecontainer{
+  padding-left: 2vw;
+  display: flex;
+}
+
+#readmorecontainer p{
+  margin: 2vw;
+  width: 80vw;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.button{
+  background-color: #B77DFD;
+  color: white;
+  text-decoration: none;
+  font-size: 9vw;
+  min-width: 7vw;
+  min-height: 7vw;
+}
+
+.entry p{
+  margin: 0 0 0 6vh;
+}
+
+.entry{
+  color: white;
+}
+
+#entry2{
+  background-color: #C8A3F8;
+  display: flex;
+  flex-direction: row;
+  padding: 4vh;
+}
+
+#entry1, #entry3{
+  background-color: #B77DFD;
+  display: flex;
+  flex-direction: row;
+  padding: 4vh;
+}
+
+.date{
+  flex-direction: column;
+  margin: 4vh;
+}
+
+.date :last-child{
+  font-size: 2.5rem;
+}
+
+.footer{
+  background-color: #1D1724;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  /* text-decoration: none; */
+}
+
+.footer p{
+  margin: 0 4vh 0 4vh;
+}
+
+.footer #smaller{
+  font-size: 10px;
+}
+
+.footer #larger{
+  margin-top: 5vh;
+}
+
+.footer table{
+  margin: 5vh 4vh 5vh 4vh;
+}
+
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+
