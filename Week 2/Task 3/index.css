@@ -41,16 +41,19 @@ img, #stats, .topic, .entry, .content, #readmorecontainer, .footer
   flex-direction: column;
 }
 
+.image{
+}
+
 #heading{
 color: white;
 font-family: 'brush';
 text-align: center;
-font-size: 3rem;
-margin: 0 0 2vh 0;
+font-size: 6vw;
+margin: 0 0 2vw 0;
 }
 
 #stats{
-  padding: 2vh 2vh 0 0;
+  padding: 0 0 0 2vw;
 }
 
 #stats > *{
@@ -71,7 +74,7 @@ margin: 0 0 2vh 0;
 }
 
 .topic p{
-  margin:  5vh 2vh 2vh 2vh;
+  margin:  2vw;
 }
 
 #readmorecontainer{
@@ -91,13 +94,13 @@ margin: 0 0 2vh 0;
   background-color: #B77DFD;
   color: white;
   text-decoration: none;
-  font-size: 9vw;
+  font-size: 5vw;
   min-width: 7vw;
   min-height: 7vw;
 }
 
 .entry p{
-  margin: 0 0 0 6vh;
+  margin: 0 0 0 2vw;
 }
 
 .entry{
@@ -108,23 +111,28 @@ margin: 0 0 2vh 0;
   background-color: #C8A3F8;
   display: flex;
   flex-direction: row;
-  padding: 4vh;
+  padding: 2vw;
 }
 
 #entry1, #entry3{
   background-color: #B77DFD;
   display: flex;
   flex-direction: row;
-  padding: 4vh;
+  padding: 2vw;
 }
 
 .date{
   flex-direction: column;
-  margin: 4vh;
+  margin: 1vw;
+}
+
+.date :first-child{
+  color: #1D1724;
 }
 
 .date :last-child{
   font-size: 2.5rem;
+  color: white;
 }
 
 .footer{
@@ -136,7 +144,7 @@ margin: 0 0 2vh 0;
 }
 
 .footer p{
-  margin: 0 4vh 0 4vh;
+  margin: 0 1vw 0 1vw;
 }
 
 .footer #smaller{
@@ -144,11 +152,11 @@ margin: 0 0 2vh 0;
 }
 
 .footer #larger{
-  margin-top: 5vh;
+  margin-top: 5vw;
 }
 
 .footer table{
-  margin: 5vh 4vh 5vh 4vh;
+  margin: 2vw  2vw 2vw 2vw;
 }
 
 .footer a{
