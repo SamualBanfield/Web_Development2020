@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+
+<body>
+  <style>
+    #button,
+    #alert {
+      position: absolute;
+    }
+
+    #alert {
+      left: 50px;
+    }
+  </style>
+  <h1>Cookie Clicker</h1>
+  <h2 id="counter">Counter</h2>
+  <button type="button" id="button">+1</button>
+  <button id="alert">CLICK ME!</button>
+</body>
+
+<script type="text/javascript">
+  let scare = document.getElementById("alert");
+  scare.onclick = boo
+  let button = document.getElementById("button");
+  button.onclick = addToCount;
+  let counter = document.getElementById("counter");
+  let count = 0;
+
+  function boo() {
+    window.alert("B0oOo!");
+  }
+
+  function addToCount() {
+    count += 1;
+    counter.innerHTML = count;
+    let x = Math.floor(Math.random() * 300) + 300;
+    let y = Math.floor(Math.random() * 300) + 300;
+    console.log(x);
+    console.log(y);
+    button.style.left = `${x}px`;
+    button.style.top = `${y}px`;
+  }
+</script>
+
+</html>

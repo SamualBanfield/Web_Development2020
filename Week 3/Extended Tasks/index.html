@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extended</title>
+
+</head>
+
+<body>
+
+  <style>
+    p {
+      font-size: 5rem;
+      margin: 40px;
+    }
+
+    div {
+      display: flex;
+    }
+
+    div form {
+      margin-right: 10px;
+    }
+  </style>
+
+  <form action="#">
+    <input type="number" id="input">
+  </form>
+
+  <p>+</p>
+
+  <div>
+    <form action="#">
+      <input type="number" id="input2">
+    </form>
+    <button id="button">Add Values!</button>
+  </div>
+  <h2 id="result"></h2>
+</body>
+
+<script type="text/javascript">
+  let num1 = document.getElementById("input");
+  let num2 = document.getElementById("input2");
+  let button = document.getElementById("button");
+  let resultarea = document.getElementById("result");
+  button.onclick = function () {
+    let result = Number(num1.value) + Number(num2.value);
+    resultarea.innerHTML = `Value: ${result}`;
+  }
+</script>
+
+</html>
