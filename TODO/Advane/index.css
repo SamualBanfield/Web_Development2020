@@ -1,0 +1,66 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header button:active{
+  background-color: #dddada;
+}
+select{
+  width: 138px;
+}
+
+input ::placeholder {
+  color: #dddada;
+}
+
+#content{
+  display: flex;
+}
+
+#content > *{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 5px;
+}
+
+#content > * > div{
+  width: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px gray;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#content > * > h2{
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  color: #dcdcdc;
+  letter-spacing: 5px;
+}
+
+#content > * > * > button{
+  width: 15%;
+  border: none;
+  background-color: white;
+  outline: none;
+}
+
+#content > * > * > button:last-child{
+  color: green;
+}
+
+#content > * > * > button:first-child{
+  color: red;
+}
+
+#content > * > * > p{
+  margin: 5px;
+  width: 70%;
+  text-align: center;
+}
+

@@ -1,0 +1,49 @@
+
+.container{
+  width: 250px;
+}
+
+.header{
+padding-bottom: 10px;
+}
+
+.header > *{
+  border-radius: 3px;
+  border: solid 1px gray;
+  outline: none;
+}
+
+.header button{
+  width: 80px;
+}
+
+.header button:active{
+  background-color: #dddada;
+}
+
+::placeholder {
+  color: #dddada;
+}
+
+#content > *{
+  width: 250px;
+  overflow: hidden;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px gray;
+}
+
+#content > *:hover{
+  background-color: #dddada;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#content button{
+margin-bottom: 10px;
+padding: 5px;
+}
