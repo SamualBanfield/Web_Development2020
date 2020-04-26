@@ -1,0 +1,139 @@
+body, html{
+  height: 100%;
+  margin: 0;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Acme', sans-serif;
+}
+
+body{
+  width: 100%;
+  padding: 15px;
+}
+
+header, .mainContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+/* Centering */
+header, .mainContainer{
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.socialtab *{
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+.socialtab > a:visited, .socialtab> a:link{
+color: #d8d8d8;
+}
+
+.socialtab > a:hover:nth-child(1){
+color: #7289DA;
+}
+
+.socialtab > a:hover:nth-child(2){
+  color: #4267b2;
+}
+
+.socialtab > a:hover:nth-child(3){
+  color: #000000;
+}
+
+.socialtab > a:hover:nth-child(4){
+  color: #FF4500;
+}
+
+.socialtab > a:hover:nth-child(5){
+  color: #1DA1F2;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 0 5px;
+}
+
+.counterContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.counter{
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.noteOverTime{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.noteOverTime :first-child{
+  margin-right: 10px;
+}
+
+#clicker{
+  margin-right: 50px;
+  width: 500px;
+  height: 500px;
+  border: none;
+  outline: none;
+  background-image: url(gtar.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#upgradesContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+#upgradesContainer > *{
+  min-width: 400px;
+  background-image: linear-gradient(#E42C27, #B31217);
+  color: #ffffff;
+  -webkit-text-stroke: 0.05rem black;
+  -webkit-text-fill-color: white;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Acme', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+#upgradesContainer > *:hover, #clicker{
+  cursor: pointer;
+}
+
+#upgradesContainer > button :first-child :first-child{
+  font-size: 1.5rem;
+}
+
+#upgradesContainer > button :first-child :last-child{
+  font-size: 1rem;
+}
+
+#upgradesContainer > button > :first-child{
+  width: 80%;
+}
+
+.price{
+  width: 20%;
+  font-size: 1.5rem;
+  margin-left: 10px
+}

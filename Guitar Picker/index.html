@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Picker</title>
+  <link rel="stylesheet" href="index.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="socialtab">
+    <a href="https://tinyurl.com/y8wgjew4" target="_blank"><i class='fab fa-discord'></i></a>
+    <a href="https://tinyurl.com/y8wgjew4" target="_blank"><i class='fab fa-facebook-square'></i></a>
+    <a href="https://tinyurl.com/y3z55w5y" target="_blank"><i class='fab fa-github'></i></a>
+    <a href="https://tinyurl.com/y8wgjew4" target="_blank"><i class='fab fa-reddit'></i></a>
+    <a href="https://tinyurl.com/y8wgjew4" target="_blank"><i class='fab fa-twitter'></i></a>
+  </div>
+  <header>
+    <!-- Volume Controls -->
+    <!-- <div class="volumeContainer"></div> -->
+    <div class="title">Guitar</div>
+    <img src="pic.png" alt="logo" width="80px" height="85px">
+    <div class="title">Picker</div>
+    <!-- <button id="theme"><i class='fas fa-music'></i></button> -->
+  </header>
+  <div class="counterContainer">
+    <div id="counter" class="counter">0</div>
+    <div class="counter">Notes</div>
+  </div>
+  <div class="noteOverTime">
+    <div>Notes Per Second: </div>
+    <div id="noteRate">0</div>
+  </div>
+  <div class="mainContainer">
+    <button id="clicker"></button>
+    <div id="upgradesContainer">
+      <button id="clickUpgrade" onmouseover="checking(this)" onmouseout="defaulting(this)">
+        <div>
+          <div class="upgradeName">Upgrade click Power</div>
+          <div class="upgradeDescription">increases clicking power by 1</div>
+        </div>
+        <div id="clickPrice" class="price">10</div>
+      </button>
+      <button id="rateUpgrade" onmouseover="checking(this)" onmouseout="defaulting(this)">
+        <div>
+          <div class="upgradeName">Upgrade idle Power</div>
+          <div class="upgradeDescription">increases clicks per second by 0.1</div>
+        </div>
+        <div id="ratePrice" class="price">10</div>
+      </button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+
+</html>
